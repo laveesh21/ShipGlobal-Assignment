@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+     
+      <img src="../assets/img01.jpg" alt="Selected Image" id="selected-image" class="fade" />
+
+      <div class="carousel">
+        <div class="image-bar">
+          <button class="btn" id="prevbtn">❮</button>
+          <div class="image-list">
+            <img src="../assets/img01.jpg" alt="Image 1" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+            <img src="../assets/img02.jpg" alt="Image 2" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+            <img src="../assets/img03.jpg" alt="Image 3" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+            <img src="../assets/img04.jpg" alt="Image 3" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+            <img src="../assets/img05.jpg" alt="Image 3" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+            <img src="../assets/img07.jpg" alt="Image 3" class="carousel-image" onerror="this.src='../assets/default.jpg'"/>
+        </div>
+          <button class="btn" id="nextbtn">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
