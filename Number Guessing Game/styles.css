@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+
+.main-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(20%);
+}
+
+    .game-container {
+        position: absolute;
+        text-align: center;
+        background-color: #0d7eef21;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.064);
+        width: 550px;
+        height: 500px;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        box-shadow: 
+        0 0 25px rgba(255, 255, 255, 0.5), /* Inner white neon effect */
+        0 0 70px rgba(255, 255, 255, 0.3), /* Outer white glow */
+        0 0 100px rgba(255, 255, 255, 0.2); 
+    }
+
+h1 {
+    margin-bottom: 10%;
+            color: white;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#guessInput {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submitGuess {
+    padding: 10px;
+    background-color: #1eaa3e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitGuess:hover {
+    background-color: #218838;
+}
+
+#feedback {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+#attempts {
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+#restartGame {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+#restartGame:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #feedback {
+        font-size: 16px;
+    }
+
+    #guessInput {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #attempts {
+        font-size: 16px;
+    }
+}
